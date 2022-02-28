@@ -8,7 +8,8 @@ namespace Assignment6
     {
         static void Main(string[] args)
         {
-            int number = 74561;
+            //int number = 74561;
+            int number = 785461;
 
             string shortURL = getShortURL(number);
             if (shortURL is null)
@@ -21,7 +22,7 @@ namespace Assignment6
             }
             
             
-            int id = getId(shortURL);
+            int id = getId("");
             if(id == -1)
             {
                 Console.WriteLine("The id can not be retrieved.");
@@ -48,13 +49,13 @@ namespace Assignment6
             {
                 int i = id % 62;
                 value = record[i];
-                shortUrlinReverse = shortUrlinReverse + value;
+                shortUrlinReverse+= value;
                 id = id / 62;
             }
 
             for(int i = shortUrlinReverse.Length-1; i>=0; i--)
             {
-                shortUrl = shortUrl + shortUrlinReverse[i];
+                shortUrl+= shortUrlinReverse[i];
             }
             return shortUrl;
 
