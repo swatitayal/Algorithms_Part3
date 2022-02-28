@@ -38,7 +38,7 @@ Given two strings ‘X’ and ‘Y’, find the length of the longest common sub
 ---
 
 ### Problem 6: 
-GGiven a string, find length of the longest substring with all distinct characters.  For example, for input "abca", the output is 3 as "abc" is the longest substring with all distinct characters.
+Given a string, find length of the longest substring with all distinct characters.  
 
 [YouTube link](https://youtu.be/FQdrvxueum0) 
 
